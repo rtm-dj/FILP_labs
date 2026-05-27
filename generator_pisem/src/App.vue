@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <main class="form-card">
-      <StepperBox :steps="steps" :orientation="'horizontal'" @step-completed="onStepCompleted" />
+      <StepperBox :steps="steps" :orientation="'horizontal'"/>
 
 
       <form v-if="currentStep === 0" @submit.prevent="nextStep" id="sender-form">
